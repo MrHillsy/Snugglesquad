@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ad-section {
+        border: 2px solid #ccc;
+        padding: 20px;
+        background-color: #f9f9f9;
+        margin: 20px 0;
+        text-align: center;
+      }
+      .ad-section p {
+        font-size: 1.2em;
+      }
+      .ad-section button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .ad-section button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <main class="ad-section">
+        <p>
+          WANT TO FIND WHERE YOU CAN ADOPT LOST PETS
+          <img src="" alt="dream pet" class="dream pet img" />
+        </p>
+        <div>
+          look no further.
+          <button>click on the link now to find your new pet</button>
+        </div>
+      </main>
+    </div>
+    <script>
+      function showAd() {
+        // 50% chance to show the ad
+        if (Math.random() > 1.0) {
+          const adSection = document.createElement("div");
+          adSection.className = "ad-section";
+          adSection.innerHTML = `
+                    <p>WANT TO FIND WHERE YOU CAN ADOPT LOST PETS <img src="" alt="dream pet" class="dream pet img"></p>
+                    <div>look no further. <button>click on the link now to find your new pet</button></div>
+                `;
+          document.getElementById("content").appendChild(adSection);
+        }
+      }
+
+      // Call the function to decide whether to show the ad
+      showAd();
+    </script>
+  </body>
+</html>

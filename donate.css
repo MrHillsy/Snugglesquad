@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Hero Section */
+.donate-hero {
+    background: url('photos/rescue-hero.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 123, 255, 0.7); /* Blue overlay */
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    max-width: 600px;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Donation Options */
+.container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.donation-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.donation-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.donation-card h3 {
+    font-size: 2rem;
+    color: #008080;
+}
+
+.donation-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.donate-btn {
+    display: inline-block;
+    background: #008080;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.donate-btn:hover {
+    background: #005f73;
+    transform: scale(1.05);
+}
+
+.large {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+}
+
+/* Testimonial */
+.testimonial {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f0f8ff;
+    font-style: italic;
+    border-left: 5px solid #008080;
+}
+
+/* Floating Donate Button */
+.floating-donate-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.floating-donate-btn:hover {
+    background: #005f73;
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .donation-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donation-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .donate-hero {
+        height: 50vh;
+    }
+
+    .overlay h1 {
+        font-size: 2.2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}

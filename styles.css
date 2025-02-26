@@ -1,0 +1,805 @@
+
+
+ header .playwrite-vn-custom {
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.5;
+    font-size: 16px; /* Default font size */
+}
+body{
+    width: 100%;
+}
+.title-head{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: linear-gradient(
+      to left,
+      teal,
+      #ff6b6b,
+      #6bcb77
+    ); /* Example gradient colors */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the inside of the text transparent to show the gradient */
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #f3f3f3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+}
+
+header {
+    background: linear-gradient(to right, #007ACC, #008080);
+    color: white;
+    text-align: center;
+    padding: 1px 6px;
+   
+}
+header{
+    font-family: "Playwrite VN", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: small;
+animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+ .Home{
+    background-color: #334;
+    width: 100%;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #334;
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.home .image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007ACC;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    transform: scale(0.95);
+    background-color: #004f80;
+}
+
+/* Typing animation */
+@keyframes typing {
+from { width: 30%; }
+to { width: 100%; }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+from, to { border-color: transparent; }
+50% { border-color: white; }
+}
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Center the items */
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 2px 10px;
+    position: relative; /* Ensures child elements are positioned relative to this container */
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    background-color: #007ACC;
+    height: 4px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.brand {
+    
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007ACC;
+}
+
+.logo {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #007ACC; /* Theme color */
+    margin-right: auto; /* Pushes the logo to the left */
+}
+
+/* Base Styles for Hamburger Menu */
+#nav-menu {
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-menu li {
+    margin: 0 15px; /* Space out menu items */
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: #007ACC; /* Standard color */
+    font-weight: bold;
+    padding: 10px 15px; /* Adds padding for clickable area */
+    border-radius: 5px; /* Add some rounded edges */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+#nav-menu li a:hover {
+    background-color: #008080; /* Teal background on hover */
+    color: white; /* White text for contrast */
+}
+
+.logo{
+    
+}
+
+.logo img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+/* Visible Menu via Hamburger */
+#nav-menu.active {
+    display: block;/* Display the menu when active */
+}
+
+/* Hamburger Dropdown Menu Items */
+#nav-menu li {
+    margin: 8px 0; /* Space out menu items */
+    text-align: center;
+    justify-content: space-around; /* Align text for dropdown items */
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: #007ACC; /* Standard color */
+    font-weight: bold;
+    padding: 7px;
+    display: block; /* Ensures clickable area covers the whole item */
+    border-radius: 5px; /* Add some rounded edges */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Styles for Dropdown Items */
+#nav-menu li a:hover {
+    background-color: #008080; /* Teal background on hover */
+    color: white; /* White text for contrast */
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    #nav-menu {
+        display: flex; /* Inline display for larger screens */
+        position: static; /* Remove dropdown behavior */
+        background: none; /* No background for inline menu */
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    #nav-menu li {
+        margin: 0 15px;
+    }
+
+    #nav-menu li a {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #nav-menu li a:hover {
+        background-color: transparent; /* No background on hover for inline menu */
+        color: #008080; /* Just change the text color */
+    }
+}
+
+/* Logo for larger screens */
+@media (min-width: 768px) {
+    .navbar-container .logo {
+        display: block; /* Show logo on larger screens */
+        margin-right: 20px; /* Adds space between logo and other items */
+    }
+    .navbar-container .brand {
+        display: none; /* Hide brand text on larger screens */
+    }
+}
+ 
+/* Hide logo and show menu on smaller screens */
+@media (max-width: 768px) {
+    .navbar-container .logo {
+        display: none; /* Hide logo on smaller screens */
+    }
+    .navbar-container .brand {
+        display: block; /* Show brand text on smaller screens */
+    }
+}
+
+/* Hide nav-menu on smaller screens */
+@media (max-width: 768px) {
+    #nav-menu {
+        display: none; /* Hide nav-menu on smaller screens */
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+    .brand{
+        display: none;
+    }
+}
+.home {
+    background: #334;
+    }
+    .image {
+     display: flex;
+     align-items: center;
+     max-width: 100%;
+     max-height: 70%;
+    }
+    button {
+        display: flex; /* Ensures button content aligns properly */
+        justify-content: center; /* Centers text/icon inside the button */
+        align-items: center; /* Vertically aligns text/icon */
+        margin-top: 10px; /* Adds space above the button */
+        padding: 9px 18px; /* Adds padding for a clickable area */
+        border: none; /* Removes the default border */
+        border-radius: 5px; /* Rounds the corners for a softer look */
+        background: linear-gradient(to right, #007ACC, #008080); /* Adds a gradient background */
+        color: white; /* Ensures text is readable against the background */
+        font-size: 1rem; /* Sets a standard font size */
+        cursor: pointer; /* Changes cursor to pointer for clarity */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Adds smooth hover and click effects */
+    }
+    
+    /* Hover Effect */
+    button:hover {
+        background: linear-gradient(to right, #008080, #007ACC); /* Reverses gradient on hover */
+        transform: scale(1.05); /* Slightly enlarges the button */
+    }
+    
+    /* Active (Click) Effect */
+    button:active {
+        transform: scale(0.95); /* Shrinks slightly on click */
+        background: #005f73; /* Darker background for click feedback */
+    }
+    
+    /* Disabled Button Styling */
+    button:disabled {
+        background: #ccc; /* Light grey for disabled state */
+        color: #666; /* Dims the text */
+        cursor: not-allowed; /* Indicates button cannot be clicked */
+    }
+    
+    .about-us {
+        background: linear-gradient(to right, #ffafbd, #ffc3a0);
+        padding: 60px 0;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 20px;
+    }
+    
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .text-content {
+        flex: 1;
+        text-align: left;
+        max-width: 500px;
+    }
+    
+    .text-content h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .text-content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        display: inline-block;
+        background: #fff;
+        color: #ff6b81;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .btn {
+        display: inline-block;
+        background: #fff;
+        color: #ff6b81;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .btn:hover {
+        background: #ff6b81;
+        color: #fff;
+        transform: scale(1.05);
+    }
+    
+    .image-content {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .about-img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+        .about-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .text-content {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .about-img {
+            max-width: 300px;
+        }
+    }
+    
+
+
+section {
+    animation: fadeIn 0.8s ease;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+
+
+/* Responsive Gallery Styles */
+@media (min-width: 480px) {
+    .gallery-container img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery-container img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery-container img {
+        width: 200px;
+        height: 200px;
+    }
+}
+/* gallery section */
+#gallery{
+    background: #334;
+    width: 100%;
+}
+/* Circular Images */
+.gallery-container img {
+    border-radius: 50%; /* Makes the images circular */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    width: 150px;
+    height: 150px;
+}
+
+/* Hover Effect for Circular Images */
+.gallery-container img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
+small{
+    color: red;
+}
+
+/* Christmas Event Highlight */
+#events ul li:nth-child(2) {
+    background-color: #fffbf2; /* Light cream background for the Christmas event */
+    border: 2px dashed #ff6f61; /* Dashed border for festive flair */
+    padding: 20px; /* Extra padding for description */
+}
+
+#events ul li:nth-child(2) p {
+    font-size: 1rem;
+    color: #555; /* Muted text color for the description */
+    margin-top: 10px;
+    line-height: 1.5; /* Spacing for readability */
+}
+
+/* Event Title with Icon */
+#events ul li:nth-child(2) strong {
+    color: #ff6f61; /* Festive red for the Christmas title */
+    font-size: 1.2rem; /* Slightly larger for emphasis */
+    display: block; /* Ensures the icon and text align neatly */
+}
+#events ul li:nth-child(3) {
+    background-color: #e0f7fa; /* Light teal background */
+    border: 2px dashed #007ACC; /* Blue dashed border */
+    padding: 20px; /* Extra padding for description */
+}
+
+#events ul li:nth-child(3) p {
+    font-size: 1rem;
+    color: #555; /* Muted text color for the description */
+    margin-top: 10px;
+    line-height: 1.5; /* Spacing for readability */
+}
+
+/* Event Title with Icon */
+#events ul li:nth-child(3) strong {
+    color: #007ACC; /* Blue for the title */
+    font-size: 1.2rem; /* Slightly larger for emphasis */
+    display: block; /* Ensures the icon and text align neatly */
+}
+/* Other Event Items */
+#events ul li {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Allows text and description to stack */
+    align-items: flex-start; /* Aligns content to the left */
+}
+
+#events ul li strong {
+    color: #008080;
+    font-size: 1.2rem;
+}
+
+#events ul li p {
+    margin: 0;
+}
+/* Responsive Styles for Events Section */
+@media (min-width: 480px) {
+    #events ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #events ul li {
+        flex: 1 1 calc(50% - 10px); /* Two columns */
+    }
+}
+
+@media (min-width: 768px) {
+    #events ul li {
+        flex: 1 1 calc(33.333% - 10px); /* Three columns */
+    }
+}
+
+@media (min-width: 1024px) {
+    #events ul li {
+        flex: 1 1 calc(25% - 10px); /* Four columns */
+    }
+}
+
+#success-stories {
+    background: #fef7f1;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ff6b81;
+}
+
+.section-intro {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.story-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.story-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-text {
+    padding: 20px;
+}
+
+.story-text h3 {
+    font-size: 1.5rem;
+    color: #ff6b81;
+    margin-bottom: 10px;
+}
+
+.story-text p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stories-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+ 
+  
+/* Footer Styling */
+#footer {
+    background-color: #007ACC; /* Blue background */
+    color: white; /* White text */
+    padding: 40px 20px; /* Adds spacing */
+    margin-top: 40px; /* Separates it from other sections */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space out footer sections */
+    flex-wrap: wrap; /* Wraps content on smaller screens */
+    gap: 20px; /* Adds space between sections */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+}
+
+/* Footer Links Section */
+.footer-links, .footer-contacts {
+    flex: 1; /* Makes sections flexible */
+    min-width: 200px; /* Ensures sections don't shrink too small */
+}
+
+.footer-links h3, .footer-contacts h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Uppercase for titles */
+}
+
+.footer-links ul, .footer-contacts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li, .footer-contacts ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a, .footer-contacts ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Adds hover effect */
+}
+
+.footer-links ul li a:hover, .footer-contacts ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center; /* Center-aligns text */
+    margin-top: 20px; /* Adds spacing above */
+    font-size: 0.9rem; /* Smaller text for copyright */
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    padding-top: 10px; /* Adds space above */
+}
+
+/* Responsive font sizes */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px; /* Smaller font size for small screens */
+    }
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+    h2 {
+        font-size: 1.25rem; /* Adjust heading size */
+    }
+    h3 {
+        font-size: 1.1rem; /* Adjust heading size */
+    }
+    p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        font-size: 15px; /* Medium font size for medium screens */
+    }
+    h1 {
+        font-size: 1.75rem; /* Adjust heading size */
+    }
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+    h3 {
+        font-size: 1.25rem; /* Adjust heading size */
+    }
+    p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 16px; /* Larger font size for large screens */
+    }
+    h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+    h2 {
+        font-size: 1.75rem; /* Adjust heading size */
+    }
+    h3 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+    p {
+        font-size: 1.1rem; /* Adjust paragraph size */
+    }
+}
+/* Floating Donate Button */
+.floating-donate-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.floating-donate-btn:hover {
+    background: #005f73;
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .donation-options {
+        flex-direction: column;
+        align-items: center;
+    } .overlay h1 {
+        font-size: 2.2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}
